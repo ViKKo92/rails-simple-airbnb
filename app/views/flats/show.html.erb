@@ -1,0 +1,53 @@
+<div class="image-holder"></div>
+
+<div class="container">
+  <div class="left-wrapper">
+    <div class="flat-header">
+      <h1><%= @flat.name %></h1>
+      <h3><%= @flat.address %></h3>
+    </div>
+
+    <div class="flat-description">
+      <h2>A bit more about this flat</h2>
+      <p><%= @flat.description %></p>
+      <img id="static-map" src="https://highthemes.com/wp-content/uploads/2017/12/google-map.png" alt="">
+    </div>
+  </div>
+  <div class="right-wrapper">
+    <div class="booking-form-container">
+      <h3>Book this flat</h3>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">From:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g., 10/10/2022">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">To:</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="e.g., 14/10/2022">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+      </form>
+    </div>
+    <div class="details-box">
+      <h3>Details</h3>
+      <div class="icons-wrapper">
+        <div class="icon-box">
+          <i class="fa-solid fa-person"></i><p><%= @flat.number_of_guests %></p>
+        </div>
+        <div class="icon-box">
+          <i class="fa-solid fa-euro-sign"></i><p><%= @flat.price_per_night %></p>
+        </div>
+      </div>
+    </div>
+    <div class="share-box">
+      <h3>Share this</h3>
+      <div class="share-icons">
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://twitter.com/?lang=en">Twitter</a>
+        <a href="https://www.pinterest.com/">Pinterest</a>
+        <a href="https://mail.google.com/">Email</a>
+      </div>
+    </div>
+  </div>
+</div>
